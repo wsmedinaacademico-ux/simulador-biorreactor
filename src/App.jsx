@@ -477,9 +477,80 @@ export default function App() {
 
               <CartesianGrid stroke="#333" />
 
-              <XAxis dataKey="field" />
+              <XAxis
 
-              <YAxis />
+                dataKey="field"
+
+                type="number"
+
+                domain={[0.01, 0.10]}
+
+                ticks={[
+                  0.01,
+                  0.02,
+                  0.03,
+                  0.04,
+                  0.05,
+                  0.06,
+                  0.07,
+                  0.08,
+                  0.09,
+                  0.10
+                ]}
+
+                tickFormatter={(value)=>
+                  value.toFixed(2)
+                }
+
+                stroke="#cecfd4"
+
+                label={{
+
+                  value:
+                    'Campo Magnético B [T]',
+
+                  position: 'bottom',
+
+                  fill: '#ffffff',
+
+                  offset: 10
+
+                }}
+
+              />
+
+              <YAxis
+
+                domain={[0, 0.004]}
+
+                ticks={[
+                  0,
+                  0.001,
+                  0.002,
+                  0.003,
+                  0.004
+                ]}
+
+                tickFormatter={(value)=>
+                  value.toFixed(3)
+                }
+
+                stroke="#cecfd4"
+
+                label={{
+
+                  value:
+                    'Torque τ [N·m]',
+
+                  angle: -90,
+
+                  position: 'insideLeft',
+
+                  fill: '#ffffff'
+
+                }}
+
+              />
 
               <Tooltip />
 
@@ -539,32 +610,56 @@ export default function App() {
 
                 dataKey="torque"
 
+                type="number"
+
+                domain={[0, 0.004]}
+
+                ticks={[
+                  0,
+                  0.001,
+                  0.002,
+                  0.003,
+                  0.004
+                ]}
+
                 tickFormatter={(value)=>
-                  value.toFixed(4)
+                  value.toFixed(3)
                 }
+
+                stroke="#cecfd4"
 
                 label={{
 
                   value:
                     'Torque τ [N·m]',
 
-                  position: 'insideBottom',
+                  position: 'bottom',
 
-                  offset: -5,
+                  fill: '#ffffff',
 
-                  fill: '#ffffff'
+                  offset: 10
 
                 }}
-
-                stroke="#cecfd4"
 
               />
 
               <YAxis
 
+                domain={[0, 600]}
+
+                ticks={[
+                  0,
+                  150,
+                  300,
+                  450,
+                  600
+                ]}
+
                 tickFormatter={(value)=>
                   value.toFixed(0)
                 }
+
+                stroke="#cecfd4"
 
                 label={{
 
@@ -578,8 +673,6 @@ export default function App() {
                   fill: '#ffffff'
 
                 }}
-
-                stroke="#cecfd4"
 
               />
 
