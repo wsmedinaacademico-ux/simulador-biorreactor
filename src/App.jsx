@@ -535,11 +535,73 @@ export default function App() {
 
               <CartesianGrid stroke="#333" />
 
-              <XAxis dataKey="torque" />
+              <XAxis
 
-              <YAxis />
+                dataKey="torque"
 
-              <Tooltip />
+                tickFormatter={(value)=>
+                  value.toFixed(4)
+                }
+
+                label={{
+
+                  value:
+                    'Torque τ [N·m]',
+
+                  position: 'insideBottom',
+
+                  offset: -5,
+
+                  fill: '#ffffff'
+
+                }}
+
+                stroke="#cecfd4"
+
+              />
+
+              <YAxis
+
+                tickFormatter={(value)=>
+                  value.toFixed(0)
+                }
+
+                label={{
+
+                  value:
+                    'ΔP [Pa]',
+
+                  angle: -90,
+
+                  position: 'insideLeft',
+
+                  fill: '#ffffff'
+
+                }}
+
+                stroke="#cecfd4"
+
+              />
+
+              <Tooltip
+
+                contentStyle={{
+
+                  background: '#111827',
+
+                  border: '1px solid #865cf0',
+
+                  borderRadius: '12px',
+
+                  color: 'white'
+
+                }}
+
+                formatter={(value)=>
+                  Number(value).toFixed(3)
+                }
+
+              />
 
               <Line
                 type="monotone"
