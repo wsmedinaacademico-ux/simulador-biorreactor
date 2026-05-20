@@ -527,7 +527,7 @@ export default function App() {
 
                   fill: '#ffffff',
 
-                  offset: 10
+                  offset: 15
 
                 }}
 
@@ -665,7 +665,7 @@ export default function App() {
 
                   fill: '#ffffff',
 
-                  offset: 10
+                  offset: 15
 
                 }}
 
