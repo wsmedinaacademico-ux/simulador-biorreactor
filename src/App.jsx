@@ -472,7 +472,21 @@ export default function App() {
           >
 
             <LineChart
+
               data={electromagneticData}
+
+              margin={{
+
+                top: 20,
+
+                right: 20,
+
+                left: 20,
+
+                bottom: 45
+
+              }}
+
             >
 
               <CartesianGrid stroke="#333" />
@@ -509,7 +523,7 @@ export default function App() {
                   value:
                     'Campo Magnético B [T]',
 
-                  position: 'bottom',
+                  position: 'insideBottom',
 
                   fill: '#ffffff',
 
@@ -601,7 +615,21 @@ export default function App() {
           >
 
             <LineChart
+
               data={hydrodynamicData}
+
+              margin={{
+
+                top: 20,
+
+                right: 20,
+
+                left: 20,
+
+                bottom: 45
+
+              }}
+
             >
 
               <CartesianGrid stroke="#333" />
@@ -633,7 +661,7 @@ export default function App() {
                   value:
                     'Torque τ [N·m]',
 
-                  position: 'bottom',
+                  position: 'insideBottom',
 
                   fill: '#ffffff',
 
