@@ -5,6 +5,9 @@ import './index.css'
 import BioreactorScene
 from './components/BioreactorScene'
 
+import TheorySection
+from './components/TheorySection'
+
 import {
   LineChart,
   Line,
@@ -552,6 +555,8 @@ export default function App() {
         </div>
 
       </div>
+
+      <TheorySection />
 
     </div>
 
