@@ -1,0 +1,120 @@
+* {
+
+  font-family: Arial, sans-serif;
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  margin: 0;
+
+  background: #07111f;
+
+  color: white;
+
+  font-family: Arial;
+
+}
+
+.app {
+
+  padding: 20px;
+
+}
+
+.header {
+
+  margin-bottom: 20px;
+
+}
+
+.main-layout {
+
+  display: grid;
+
+  grid-template-columns:
+    300px
+    1fr
+    300px;
+
+  gap: 20px;
+
+  align-items: start;
+
+}
+
+.panel {
+
+  background: rgba(255,255,255,0.05);
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  backdrop-filter: blur(10px);
+
+}
+
+.reactor-container {
+
+  height: 700px;
+
+  background: black;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+}
+
+.metric {
+
+  margin-top: 20px;
+
+  font-size: 18px;
+
+}
+
+input {
+
+  width: 100%;
+
+  margin-bottom: 20px;
+
+}
+
+.graphs {
+
+  margin-top: 30px;
+
+  background: rgba(255,255,255,0.05);
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+}
+
+.equations {
+
+  margin-top: 30px;
+
+  background: rgba(255,255,255,0.05);
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+}
+
+.equation {
+
+  margin-top: 15px;
+
+  font-size: 24px;
+
+  color: #00ffd0;
+
+}
